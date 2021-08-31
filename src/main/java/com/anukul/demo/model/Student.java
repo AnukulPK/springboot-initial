@@ -3,7 +3,8 @@ package com.anukul.demo.model;
 import java.util.UUID;
 
 public class Student {
-    private final UUID id;
+
+    private UUID id;
     private final String firstName;
     private final String lastName;
     private final String course;
@@ -15,6 +16,14 @@ public class Student {
         this.lastName = lastName;
         this.course = course;
         this.age = age;
+    }
+
+    public UUID getId() {
+        return id;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
     }
 
     public String getFirstName() {
